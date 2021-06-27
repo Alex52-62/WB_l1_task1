@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switcher</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script defer src="./src/main.js" type="module"></script>
+
+    <style>
+        .off {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href='#' id="switcher" class="push">Нажмите сюда</a>
+    <div id='switch'>
+        <section name='txt' class='on'>
+            <div class="datecalc">
+                <form id="datecalc" class="board">
+                    <div class="center">
+                        <h3>Калькулятор дат</h3>
+                    </div>
+
+                    <label>
+                        <strong>Первая дата:</strong>
+                        <input class="input" type="date" name="firstDate" />
+                    </label>
+
+                    <label>
+                        <strong>Вторая дата:</strong>
+                        <input class="input" type="date" name="secondDate" />
+                    </label>
+
+                    <button class="input2" type="submit">Расчитать промежуток</button>
+                    <p id="datecalc__result"></p>
+                </form>
+            </div>
+        </section>
+        <section name='txt' class='off'>
+            <div class="timerWrapper">
+
+                <div class="center">
+                    <h3>Таймер:</h3>
+                </div>
+
+                <label>
+                    <strong>введите время (в секундах >10)</strong>
+                    <input class="input" type="number" id="in">
+                </label>
+
+                <p id="demo"></p>
+                <button id="demo1">Start counter</button>
+                <button id="demo2">Stop counter</button>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
